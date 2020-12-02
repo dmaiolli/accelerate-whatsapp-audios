@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "version": "0.1",
+    "name": "Accelerate Audios",
+    "description": "Extensão para acelerar seus áudios do whatsapp",
+    "author": "Denys Lonkovski Maiolli",
+    "browser_action": {
+        "default_title": "Accelerate Audios",
+        "default_popup": "index.html",
+        "default_icon": "icon.png"
+    },
+    "content_scripts": [{
+        "matches": ["https://web.whatsapp.com/"],
+        "css": ["style.css"],
+        "js": ["content.js"]
+    }]
+}
