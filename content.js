@@ -13,12 +13,10 @@ const reqHeader = new Promise((resolve, reject) => {
             audios.forEach((audio) => {
                 audio.playbackRate = 2;
             })
+            button.classList.add("active")
         })
 
         header.appendChild(button)
     }, 5000)
 })
 
-reqHeader.then(value => {
-
-})
